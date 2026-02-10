@@ -9,5 +9,5 @@
 $(function () {
   $("h2.head").css("background-color", "green");
   $("h2.head").find(".inner").css("color", "blue");
-});
+}); // Done
 

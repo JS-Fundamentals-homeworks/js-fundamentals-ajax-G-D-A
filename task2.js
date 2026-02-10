@@ -5,3 +5,16 @@
 // відобразити у тезі #userCity
 // Запустити програму потрібно за допомогою Live Server
 // Перевірити правильність програми - команда node tests/task2.test.js
+
+$(function () {
+  const links = $("a");
+
+  links.attr("target", "_blank");
+
+  links.each(function () {
+    const href = $(this).attr("href") || "";
+    if (href.startsWith("https://")) {
+      $(this).addClass("secure");
+    }
+  });
+});

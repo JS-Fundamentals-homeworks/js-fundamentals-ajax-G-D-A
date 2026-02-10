@@ -5,3 +5,9 @@
 // який створений у файлі index.html
 // Запустити програму за допомогою Live Server
 // Перевірити за допомогою команди npm tests/task1.test.js 
+
+$(function () {
+  $("h2.head").css("background-color", "green");
+  $("h2.head").find(".inner").css("color", "blue");
+});
+
